@@ -1,0 +1,16 @@
+{% from "macros.html" import nav_link with context %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="nav navbar-nav">
+        {{ nav_link('title', 'Template') }}
+        {{ nav_link('show_form', 'Show') }}
+    </ul>
+   {% block content %}
+   {% endblock %}
+</body>
+</html>
